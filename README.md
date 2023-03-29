@@ -1,6 +1,6 @@
 # Wilder Active Speaker Detection (WASD) Dataset ([Paper](https://arxiv.org/pdf/2303.05321.pdf))
 
-*To view further details about WASD go to [dataset website](https://joana-cabral.github.io/dataset/)*
+*To view further details about WASD go to [dataset website](https://tiago-roxo.github.io/WASD/)*
 
 **Wilder Active Speaker Detection (WASD)** dataset has increased difficulty by targeting the two key components of current Active Speaker Detection: audio and face. Grouped into **5 categories**, ranging from optimal conditions to surveillance settings, WASD contains incremental challenges for Active Speaker Detection with tactical impairment of audio and face data. 
 
