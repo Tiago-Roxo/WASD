@@ -1,0 +1,10 @@
+title: WASD
+description: Wilder Active Speaker Detection [<a id="paper_link" href="https://arxiv.org/pdf/2303.05321.pdf">Paper</a>]
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
+
+github:
+  zip_url: https://drive.google.com/file/d/1calMd83IIzYnvETY3bee7juRACMBuuyR/view?usp=share_link
+  dataset_url: https://github.com/Joana-Cabral/RN-TP2.github.io/blob/main/OnePixel.py
+  model_url: https://example.com
