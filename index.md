@@ -86,34 +86,7 @@ We analyze different scenarios where WASD is distinctive from AVA-ActiveSpeaker 
 
 ## Download Dataset
 
-There are 2 options to obtain WASD dataset: *Plug-and-play* **OR** *Download and Process WASD Data*
-
-#### 1. Plug-and-play
-
-Download the .zip containing the dataset at the **[top of the page](#zip_download_link)**, which should contain the following directory structure:
-```bash
-|-- WASD
-    |-- clips_audios
-    |   |-- ...
-    |-- clips_videos
-    |   |-- ...
-    |-- clips_videos_body
-    |   |-- ...
-    |-- csv
-        |-- train_body_loader.csv
-        |-- train_body_orig.csv
-        |-- train_loader.csv
-        |-- train_orig.csv
-        |-- val_body_loader.csv
-        |-- val_body_orig.csv
-        |-- val_loader.csv
-        |-- val_orig.csv
-```
-
-#### 2. Download and Process WASD Data
-
-
-1. Download the content of the [Dataset Github](https://github.com/Joana-Cabral/dataset) repository;
+1. Download the content of the [Dataset Github](https://github.com/Tiago-Roxo/WASD) repository;
 2. Execute `python3 prepare_setup.py` to create the `WASD` directory and necessary subfolders;
 3. Execute `python3 create_dataset.py` to extract audio and face data;
     1. (OPTIONAL) If you want to obtain body data, execute `python3 create_dataset.py --body`;
