@@ -1,6 +1,6 @@
 title: WASD
 description: Wilder Active Speaker Detection [<a id="paper_link" href="https://arxiv.org/pdf/2303.05321.pdf">Paper</a>]
-show_downloads: true
+show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
 
