@@ -51,23 +51,27 @@ Regarding the considered languages, we group them as follows:
 
 Comparison of AVA-ActiveSpeaker trained state-of-the-art models on AVA-ActiveSpeaker and categories of WASD, using the mAP metric. We train and evaluate each model following the authors’ implementation. OC refers to Optimal Conditions, SI to Speech Impairment, FO to Face Occulsion, HVN to Human Voice Noise, and SS to Surveillance Settings. AVA refers to AVA-ActiveSpeaker.
 
-| Model        | AVA       | OC        | SI        | FO        | HVN       | SS        |
-|:-------------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
-| ASC [\[1\]](https://github.com/fuankarion/active-speakers-context) | 83.6      | 86.4      | 84.8      | 69.9      | 66.4      | 51.1      |
-| MAAS [\[2\]](https://github.com/fuankarion/MAAS)                   | 82.0      | 83.3      | 81.3      | 68.6      | 65.6      | 46.0      |
-| TalkNet [\[3\]](https://github.com/TaoRuijie/TalkNet-ASD)      | 91.8      | 91.6      | 93.0      | 86.4      | 77.2      | 64.6      |
-| ASDNet [\[4\]](https://github.com/okankop/ASDNet)      | 91.1      | 91.1      | 90.4      | 78.2      | 74.9      | 48.1      |
+| Model                                                              | AVA       | OC        | SI        | FO        | HVN       | SS        | Avg       |
+|:-------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ASC [\[1\]](https://github.com/fuankarion/active-speakers-context) | 83.6      | 86.4      | 84.8      | 69.9      | 66.4      | 51.1      | 74.6      |
+| MAAS [\[2\]](https://github.com/fuankarion/MAAS)                   | 82.0      | 83.3      | 81.3      | 68.6      | 65.6      | 46.0      | 70.7      |
+| ASDNet [\[3\]](https://github.com/okankop/ASDNet)                  | 91.1      | 91.1      | 90.4      | 78.2      | 74.9      | 48.1      | 79.2      |
+| TalkNet [\[4\]](https://github.com/TaoRuijie/TalkNet-ASD)          | 91.8      | 91.6      | 93.0      | 86.4      | 77.2      | 64.6      | 85.0      |
+| TS-TalkNet [\[5\]](https://github.com/Jiang-Yidi/TS-TalkNet)       | 92.7      | 91.1      | 93.7      | 88.6      | 79.2      | 64.0      | 85.7      |
+| Light-ASD [\[6\]](https://github.com/Junhua-Liao/Light-ASD)        | 93.4      | 93.1      | 93.8      | 88.7      | 80.1      | 65.2      | 86.2      |
 
 #### WASD Train
 
 Comparison of state-of-the-art models on the different categories of WASD, using the mAP metric. OC refers to Optimal Conditions, SI to Speech Impairment, FO to Face Occulsion, HVN to Human Voice Noise, and SS to Surveillance Settings.
 
-| Model        | OC        | SI        | FO        | HVN       | SS        |
-|:-------------|:---------:|:---------:|:---------:|:---------:|:---------:|
-| ASC [\[1\]](https://github.com/fuankarion/active-speakers-context)         | 91.2      | 92.3      | 87.1      | 66.8      | 72.2      |
-| MAAS [\[2\]](https://github.com/fuankarion/MAAS)        | 90.7      | 92.6      | 87.0      | 67.0      | 76.5      |
-| TalkNet [\[3\]](https://github.com/TaoRuijie/TalkNet-ASD)     | 95.8      | 97.5      | 93.1      | 81.4      | 77.5      |
-| ASDNet [\[4\]](https://github.com/okankop/ASDNet)      | 96.5      | 97.4      | 92.1      | 77.4      | 77.8      |
+| Model                                                              | OC        | SI        | FO        | HVN       | SS        | Avg       |
+|:-------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
+| ASC [\[1\]](https://github.com/fuankarion/active-speakers-context) | 91.2      | 92.3      | 87.1      | 66.8      | 72.2      | 85.7      |
+| MAAS [\[2\]](https://github.com/fuankarion/MAAS)                   | 90.7      | 92.6      | 87.0      | 67.0      | 76.5      | 86.4      |
+| ASDNet [\[3\]](https://github.com/okankop/ASDNet)                  | 96.5      | 97.4      | 92.1      | 77.4      | 77.8      | 92.0      |
+| TalkNet [\[4\]](https://github.com/TaoRuijie/TalkNet-ASD)          | 95.8      | 97.5      | 93.1      | 81.4      | 77.5      | 92.3      |
+| TS-TalkNet [\[5\]](https://github.com/Jiang-Yidi/TS-TalkNet)       | 96.8      | 97.9      | 94.4      | 84.0      | 79.3      | 93.1      |
+| Light-ASD [\[6\]](https://github.com/Junhua-Liao/Light-ASD)        | 97.8      | 98.3      | 95.4      | 84.7      | 77.9      | 93.7      |
 
 #### WASD *vs* AVA-ActiveSpeaker Train
 
