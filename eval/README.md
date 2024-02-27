@@ -15,7 +15,6 @@ The categories are represented by numbers from 0 to 4, which one refering to *Op
 | Speech Overlap                  | None-Low (0) or Medium-High (1)      |
 | Delayed Speech                  | No (0) or Yes (1)                    |
 | Surveillance Settings           | No (0) or Yes (1)                    |
-| Body Access                     | None-Low (0) or Medium-High (1)      |
 | Proximity to Camera             | Low (0) or Medium (1) or High (2)    |
 | Audio Quality                   | Low (0) or High (1)                  |
 | Face Availability               | Non-Guaranteed (0) or Guaranteed (1) |
