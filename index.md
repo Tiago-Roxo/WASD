@@ -51,7 +51,7 @@ Regarding the considered languages, we group them as follows:
 
 Comparison of AVA-ActiveSpeaker trained state-of-the-art models on AVA-ActiveSpeaker and categories of WASD, using the mAP metric. We train and evaluate each model following the authors’ implementation. OC refers to Optimal Conditions, SI to Speech Impairment, FO to Face Occulsion, HVN to Human Voice Noise, and SS to Surveillance Settings. AVA refers to AVA-ActiveSpeaker.
 
-| Model                                                              | AVA       | OC        | SI        | FO        | HVN       | SS        | Avg       |
+| Model                                                              | AVA       | OC        | SI        | FO        | HVN       | SS        | WASD      |
 |:-------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | ASC [\[1\]](https://github.com/fuankarion/active-speakers-context) | 83.6      | 86.4      | 84.8      | 69.9      | 66.4      | 51.1      | 74.6      |
 | MAAS [\[2\]](https://github.com/fuankarion/MAAS)                   | 82.0      | 83.3      | 81.3      | 68.6      | 65.6      | 46.0      | 70.7      |
@@ -64,7 +64,7 @@ Comparison of AVA-ActiveSpeaker trained state-of-the-art models on AVA-ActiveSpe
 
 Comparison of state-of-the-art models on the different categories of WASD, using the mAP metric. OC refers to Optimal Conditions, SI to Speech Impairment, FO to Face Occulsion, HVN to Human Voice Noise, and SS to Surveillance Settings.
 
-| Model                                                              | OC        | SI        | FO        | HVN       | SS        | Avg       |
+| Model                                                              | OC        | SI        | FO        | HVN       | SS        | WASD      |
 |:-------------------------------------------------------------------|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|
 | ASC [\[1\]](https://github.com/fuankarion/active-speakers-context) | 91.2      | 92.3      | 87.1      | 66.8      | 72.2      | 85.7      |
 | MAAS [\[2\]](https://github.com/fuankarion/MAAS)                   | 90.7      | 92.6      | 87.0      | 67.0      | 76.5      | 86.4      |
