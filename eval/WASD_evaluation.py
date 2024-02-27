@@ -260,7 +260,7 @@ def run_evaluation(groundtruth, predictions):
 
   # 2. Custom choice mAP (e.g. Category)
   dict_vids = create_dict_vids()
-  list_cat = ["Interview", "Debate", "Podcast", "React", "Police"]
+  list_cat = ["OC", "SI", "FO", "HVN", "SS"]
   for cat in list_cat:
     dict_vids_temp = {}
     dict_vids_temp[cat] = dict_vids[cat]
@@ -270,12 +270,12 @@ def run_evaluation(groundtruth, predictions):
   # 3. EASY vs HARD
   # dict_vids = create_dict_vids()
   # dict_vids_temp = {}
-  # # dict_vids_temp["Hard Part"] = dict_vids["Police"] + dict_vids["Podcast"] + dict_vids["React"]
-  # dict_vids_temp["Easy Part"] = dict_vids["Interview"] + dict_vids["Debate"]
+  # # dict_vids_temp["Hard Part"] = dict_vids["SS"] + dict_vids["FO"] + dict_vids["HVN"]
+  # dict_vids_temp["Easy Part"] = dict_vids["OC"] + dict_vids["SI"]
   # custom_map(df_groundtruth, df_predictions, dict_vids_temp)
 
   # dict_vids_temp = {}
-  # dict_vids_temp["Hard Part"] = dict_vids["Police"] + dict_vids["Podcast"] + dict_vids["React"]
+  # dict_vids_temp["Hard Part"] = dict_vids["SS"] + dict_vids["FO"] + dict_vids["HVN"]
   # custom_map(df_groundtruth, df_predictions, dict_vids_temp)
 
 
