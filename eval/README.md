@@ -19,6 +19,10 @@ The categories are represented by numbers from 0 to 4, refering to *Optimal Cond
 | Audio Quality                   | Low (0) or High (1)                      |
 | Face Availability               | Non-Guaranteed (0.0) or Guaranteed (1.0) |
 
+## Columbia
+
+The results for [Columbia dataset](https://link.springer.com/chapter/10.1007/978-3-319-46454-1_18) were obtained using the evaluation tool available at [Light-ASD](https://github.com/Junhua-Liao/Light-ASD).
+
 ## Cite
 
 ```bibtex
