@@ -120,10 +120,12 @@ where `$GT` is the groundtruth CSV (*val_orig.csv* of WASD) and `$PRED` is the p
 ## Cite
 
 ```bibtex
-@article{roxo2023wasd,
-    title={WASD: A Wilder Active Speaker Detection Dataset},
-    author={Roxo, Tiago and Costa, Joana C and In{\'a}cio, Pedro RM and Proen{\c{c}}a, Hugo},
-    journal={arXiv preprint arXiv:2303.05321},
-    year={2023}
+@article{roxo2024wasd,
+  title={WASD: A Wilder Active Speaker Detection Dataset},
+  author={Roxo, Tiago and Costa, Joana C and In{\'a}cio, Pedro RM and Proen{\c{c}}a, Hugo},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science},
+  year={2024},
+  publisher={IEEE},
+  doi={10.1109/TBIOM.2024.3412821}
 }
 ```
