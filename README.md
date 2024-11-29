@@ -117,6 +117,10 @@ python3 -O WASD_evaluation.py -g $GT -p $PRED
 where `$GT` is the groundtruth CSV (*val_orig.csv* of WASD) and `$PRED` is the predictions of your ASD model (usually it is called *val_res.csv*). The execution of `WASD_evaluation.py` requires the presence of `dataset_division.txt` (both files are in `eval` folder), for category division. The output is the mAP for the 5 WASD categories.
 
 
+## Training Models on WASD
+
+To train in WASD we refer to the implementation of one of our models: [BIAS](https://github.com/Tiago-Roxo/BIAS/tree/main/BIAS).
+
 ## Cite
 
 ```bibtex
