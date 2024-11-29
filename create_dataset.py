@@ -45,16 +45,15 @@ def extract_audio_clips(dataset_sets, csv_dir, clip_audio_dir, orig_audio_dir):
             end = insData.iloc[-1]['frame_timestamp']
             entityID = insData.iloc[0]['entity_id']
 
-            if 'U4nUWtBa94I' in videoKey:
-                insPath = os.path.join(outDir, videoKey, entityID+'.wav')
-                if videoKey not in audioFeatures.keys():                
-                    audioFile = os.path.join(audioDir, videoKey+'.wav')
-                    sr, audio = wavfile.read(audioFile)
-                    audioFeatures[videoKey] = audio
-                audioStart = int(float(start)*sr)
-                audioEnd = int(float(end)*sr)
-                audioData = audioFeatures[videoKey][audioStart:audioEnd]
-                wavfile.write(insPath, sr, audioData)
+            insPath = os.path.join(outDir, videoKey, entityID+'.wav')
+            if videoKey not in audioFeatures.keys():                
+                audioFile = os.path.join(audioDir, videoKey+'.wav')
+                sr, audio = wavfile.read(audioFile)
+                audioFeatures[videoKey] = audio
+            audioStart = int(float(start)*sr)
+            audioEnd = int(float(end)*sr)
+            audioData = audioFeatures[videoKey][audioStart:audioEnd]
+            wavfile.write(insPath, sr, audioData)
 
 
     
