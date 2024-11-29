@@ -95,30 +95,29 @@ def extract_video_clips(dataset_sets, csv_dir, clip_vid_dir, orig_vid_dir, extra
                 insData = df.get_group(entity)
                 videoKey = insData.iloc[0]['video_id']
                 entityID = insData.iloc[0]['entity_id']
-                if 'U4nUWtBa94I' in videoKey:
-                    videoDir = os.path.join(orig_vid_dir, dic[dataType])
-                    videoFile = glob.glob(os.path.join(videoDir, '{}.*'.format(videoKey)))[0]
-                    V = cv2.VideoCapture(videoFile)
-                    insDir = os.path.join(os.path.join(outDir, videoKey, entityID))
-                    if not os.path.isdir(insDir):
-                        os.makedirs(insDir)
-                    j = 0
-                    for _, row in insData.iterrows():
-                        imageFilename = os.path.join(insDir, str("%.2f"%row['frame_timestamp'])+'.jpg')
-                        if os.path.exists(imageFilename):
-                            # print('skip', image_filename)
-                            continue
-                        V.set(cv2.CAP_PROP_POS_MSEC, row['frame_timestamp'] * 1e3)
-                        _, frame = V.read()
-                        h = numpy.size(frame, 0)
-                        w = numpy.size(frame, 1)
-                        x1 = int(row['entity_box_x1'] * w)
-                        y1 = int(row['entity_box_y1'] * h)
-                        x2 = int(row['entity_box_x2'] * w)
-                        y2 = int(row['entity_box_y2'] * h)
-                        face = frame[y1:y2, x1:x2, :]
-                        j = j+1
-                        cv2.imwrite(imageFilename, face)
+                videoDir = os.path.join(orig_vid_dir, dic[dataType])
+                videoFile = glob.glob(os.path.join(videoDir, '{}.*'.format(videoKey)))[0]
+                V = cv2.VideoCapture(videoFile)
+                insDir = os.path.join(os.path.join(outDir, videoKey, entityID))
+                if not os.path.isdir(insDir):
+                    os.makedirs(insDir)
+                j = 0
+                for _, row in insData.iterrows():
+                    imageFilename = os.path.join(insDir, str("%.2f"%row['frame_timestamp'])+'.jpg')
+                    if os.path.exists(imageFilename):
+                        # print('skip', image_filename)
+                        continue
+                    V.set(cv2.CAP_PROP_POS_MSEC, row['frame_timestamp'] * 1e3)
+                    _, frame = V.read()
+                    h = numpy.size(frame, 0)
+                    w = numpy.size(frame, 1)
+                    x1 = int(row['entity_box_x1'] * w)
+                    y1 = int(row['entity_box_y1'] * h)
+                    x2 = int(row['entity_box_x2'] * w)
+                    y2 = int(row['entity_box_y2'] * h)
+                    face = frame[y1:y2, x1:x2, :]
+                    j = j+1
+                    cv2.imwrite(imageFilename, face)
 
 
 if __name__ == '__main__':
