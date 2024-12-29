@@ -1,4 +1,4 @@
-# Wilder Active Speaker Detection (WASD) Dataset Website ([Paper](https://arxiv.org/pdf/2303.05321.pdf))
+# Wilder Active Speaker Detection (WASD) Dataset Website ([Paper](https://ieeexplore.ieee.org/document/10554644/))
 
 *To view further details about WASD go to [dataset website](https://tiago-roxo.github.io/WASD/)*
 
