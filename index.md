@@ -72,6 +72,8 @@ Comparison of state-of-the-art models on the different categories of WASD, using
 | TalkNet [\[4\]](https://github.com/TaoRuijie/TalkNet-ASD)          | 95.8      | 97.5      | 93.1      | 81.4      | 77.5      | 92.3      |
 | TS-TalkNet [\[5\]](https://github.com/Jiang-Yidi/TS-TalkNet)       | 96.8      | 97.9      | 94.4      | 84.0      | 79.3      | 93.1      |
 | Light-ASD [\[6\]](https://github.com/Junhua-Liao/Light-ASD)        | 97.8      | 98.3      | 95.4      | 84.7      | 77.9      | 93.7      |
+| [**BIAS**] [\[7\]](https://github.com/Tiago-Roxo/BIAS)             | 97.8      | 98.4      | 95.9      | 85.6      | 82.5      | 94.5      |
+| [**ASDnB**][\[8\]](https://github.com/Tiago-Roxo/ASDnB)         	 | 98.7      | 98.9      | 97.2      | 89.5      | 82.7      | 95.6      |
 
 #### WASD *vs* AVA-ActiveSpeaker Train
 
