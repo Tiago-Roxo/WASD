@@ -57,11 +57,11 @@ def extract_audio_clips(dataset_sets, csv_dir, clip_audio_dir, orig_audio_dir):
 
 
     
-def extract_video_clips(dataset_sets, csv_dir, clip_vid_dir, orig_vid_dir, extract_body_data=False):
+def extract_video_clips(dataset_sets, csv_dir, clip_vid_name_dir, orig_vid_dir, extract_body_data=False):
 
     dic = {'train':'trainval', 'val':'trainval', 'test':'test'}
     if extract_body_data:
-        visual_part  = ['face', 'body']
+        visual_part  = ['body'] # ['face', 'body']
     else:
         visual_part  = ['face']
     
@@ -72,7 +72,7 @@ def extract_video_clips(dataset_sets, csv_dir, clip_vid_dir, orig_vid_dir, extra
                 csv_file = "{}_orig.csv".format(dataType)
             else:
                 csv_file = "{}_orig_body.csv".format(dataType)
-                clip_vid_dir = "{}_body".format(clip_vid_dir)
+                clip_vid_dir = "{}_body".format(clip_vid_name_dir)
 
             df = pandas.read_csv(os.path.join(csv_dir, csv_file))
                     
@@ -132,7 +132,7 @@ if __name__ == '__main__':
     cvs_dir     = "csv"
     clip_audios_dir = "clips_audios"
     clip_videos_dir = "clips_videos"
-    dataset_sets = ['val'] # ['train', 'val'] # ['val']
+    dataset_sets = ['train', 'val'] # ['val']
 
     orig_audios_fullpath  = os.path.join(WASD_dir, orig_audios)
     orig_vids_fullpath = os.path.join(WASD_dir, orig_vids)

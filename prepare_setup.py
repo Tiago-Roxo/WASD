@@ -3,12 +3,13 @@ import os
 from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 from tqdm import tqdm
 
-def create_setup(WASD_dir):
+def create_setup(WASD_dir, orig_vids_dir, vids_dir):
     print("...Creating WASD setup...")
-    orig_vids_dir = "orig_videos/trainval"
     orig_vids_dir_fullpath = os.path.join(WASD_dir, orig_vids_dir)
+    vids_dir_fullpath = os.path.join(WASD_dir, vids_dir)
     os.makedirs(WASD_dir, exist_ok=True)
     os.makedirs(orig_vids_dir_fullpath, exist_ok=True)
+    os.makedirs(vids_dir_fullpath, exist_ok=True)
 
 
 def download_csv(WASD_dir):
@@ -26,13 +27,13 @@ def download_csv(WASD_dir):
 def download_videos(WASD_dir):
     print("...Downloading WASD videos...")
     file_link = "1F6pYUNz1u23Q-PvPHpxzm4RUhgFCfVYL"
-    fullpath_csv = os.path.join(WASD_dir, "WASD_videos.zip")
+    fullpath_vid = os.path.join(WASD_dir, "WASD_videos.zip")
 
-    cmd = "gdown --id %s -O %s"%(file_link, fullpath_csv)
+    cmd = "gdown --id %s -O %s"%(file_link, fullpath_vid)
     subprocess.call(cmd, shell=True, stdout=None)
-    cmd = "unzip %s -d %s"%(fullpath_csv, WASD_dir)
+    cmd = "unzip %s -d %s"%(fullpath_vid, WASD_dir)
     subprocess.call(cmd, shell=True, stdout=None)
-    os.remove(fullpath_csv)
+    os.remove(fullpath_vid)
 
 
 # ----------------------------------------------------------------
@@ -112,7 +113,7 @@ if __name__ == '__main__':
     vids_dir_fullpath = os.path.join(WASD_dir, vids_dir)
     orig_vids_fullpath = os.path.join(WASD_dir, orig_vids)
 
-    create_setup(WASD_dir)
+    create_setup(WASD_dir, orig_vids, vids_dir)
     download_csv(WASD_dir)
-    download_videos(WASD_dir)
+    download_videos(vids_dir_fullpath)
     get_subvids(vids_dir_fullpath, orig_vids_fullpath)
