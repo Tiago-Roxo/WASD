@@ -1,6 +1,24 @@
-# Wilder Active Speaker Detection (WASD) Dataset ([Paper](https://ieeexplore.ieee.org/document/10554644/))
+# Wilder Active Speaker Detection (WASD) Dataset
+
+This repository contains the code and model weights for our [paper](https://ieeexplore.ieee.org/document/10554644/) (TBIOM 2025):
+
+> WASD: A Wilder Active Speaker Detection Dataset   
+> Tiago Roxo, Joana Cabral Costa, Pedro R. M. Inácio, and Hugo Proença
 
 *To view further details about WASD go to [dataset website](https://tiago-roxo.github.io/WASD/)*
+
+***
+
+## ⭐ What's New
+
+> **Last updated:** 2026-03-19
+
+| | Update | Description |
+|---|---|---|
+| 📥 | **New download method** | We will update this repository to have direct [links to preprocessed WASD](#option-a---direct-download) |
+| 💻 | **Code update** | We fix minor errors in preparing and downloading WASD content |
+
+***
 
 **Wilder Active Speaker Detection (WASD)** dataset has increased difficulty by targeting the two key components of current Active Speaker Detection: audio and face. Grouped into **5 categories**, ranging from optimal conditions to surveillance settings, WASD contains incremental challenges for Active Speaker Detection with tactical impairment of audio and face data. 
 
@@ -63,14 +81,31 @@ Comparison of state-of-the-art models on the different categories of WASD, using
 | [**ASDnB**](https://github.com/Tiago-Roxo/ASDnB)         	   | 98.7      | 98.9      | 97.2      | 89.5      | 82.7      | 95.6      | [Download](https://drive.google.com/file/d/1MZmnF9OPYjDu4UqwTD9I8H2QjJ8BakQE/view?usp=drive_link)  |                                                                                                   |
 
 
-## Download Dataset
+## 🗂️ Download Dataset
+
+The dataset can be obtained in two ways:
+
+### Option A - Direct Download
+
+| Format | Size | Description | Link |
+|--------|------|------|------|
+| clips_audios.zip | 7 GB | Preprocessed audio files | _Coming soon_ |
+| clips_videos_body.zip | 246 GB | Preprocessed body frames | _Coming soon_ |
+| clips_videos.zip | 46 GB | Preprocessed face frames | _Coming soon_ |
+| csv.zip | 0.3 GB | CSV files | _Coming soon_ |
+
+### Option B - Preprocessing from Source
+
+⚠️ The preprocessing downloads the WASD source videos from a Google Drive link, in `prepare_setup.py` in function `download_videos`. **If you have trouble** downloading from this link, we provide a direct link in _Coming soon_
 
 1. Download the content of this GitHub repository;
 2. Execute `python3 prepare_setup.py` to create the `WASD` directory and necessary subfolders;
 3. Execute `python3 create_dataset.py` to extract audio and face data;
     1. (OPTIONAL) If you want to obtain body data, execute `python3 create_dataset.py --body`;
 
-In the end you should have the following directory structure:
+### Expected WASD Folder Structure
+
+In the end you should have the following WASD folder structure:
 ```bash
 |-- WASD
 |   |-- clips_audios
@@ -88,24 +123,15 @@ In the end you should have the following directory structure:
 |       |-- val_body_orig.csv
 |       |-- val_loader.csv
 |       |-- val_orig.csv
-|   |-- orig_videos
-|   |   |-- ...
-|   |-- orig_audios
-|   |   |-- ...
-|   |-- WASD_videos
-|   |   |-- ...
-|-- convert_dataset.py
-|-- create_dataset.py
-|-- prepare_setup.py
 ```
-The following folders are not necessary for ASD and can be deleted (if you want) from the `WASD` folder:
+The following folders are created from **Option B - Preprocessing from Source** and are not necessary for ASD and can be deleted (if you want) from the `WASD` folder:
 * `orig_videos`;
 * `orig_audios`;
 * `WASD_videos`.
 
 (OPTIONAL) If you wish to use the dataset in a format compatible with ASC, ASDNet, and MAAS, execute `python3 convert_dataset.py`. 
 
-![Warning](images/triangle-exclamation-solid.png) **Note: This will change the WASD folder to this format.** If you want to have both formats available, do a backup of the original `WASD`.
+⚠️ **Note: This will change the WASD folder to this format.** If you want to have both formats available, do a backup of the original `WASD`.
 
 
 
@@ -119,19 +145,21 @@ python3 -O WASD_evaluation.py -g $GT -p $PRED
 where `$GT` is the groundtruth CSV (*val_orig.csv* of WASD) and `$PRED` is the predictions of your ASD model (usually it is called *val_res.csv*). The execution of `WASD_evaluation.py` requires the presence of `dataset_division.txt` (both files are in `eval` folder), for category division. The output is the mAP for the 5 WASD categories.
 
 
-## Training Models on WASD
+## 🏋️ Training Models on WASD
 
 To train in WASD we refer to the implementation of one of our models: [BIAS](https://github.com/Tiago-Roxo/BIAS/tree/main/BIAS) or [ASDnB](https://github.com/Tiago-Roxo/ASDnB).
 
-## Cite
+## 📖 Cite
 
 ```bibtex
 @article{roxo2024wasd,
-  title={WASD: A Wilder Active Speaker Detection Dataset},
-  author={Roxo, Tiago and Costa, Joana C and In{\'a}cio, Pedro RM and Proen{\c{c}}a, Hugo},
-  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science},
-  year={2024},
-  publisher={IEEE},
+  author={Roxo, Tiago and Costa, Joana Cabral and Inácio, Pedro R. M. and Proença, Hugo},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science}, 
+  title={WASD: A Wilder Active Speaker Detection Dataset}, 
+  year={2025},
+  volume={7},
+  number={1},
+  pages={61-70},
   doi={10.1109/TBIOM.2024.3412821}
 }
 ```
