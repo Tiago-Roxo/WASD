@@ -5,7 +5,7 @@ This repository contains the code and model weights for our [paper](https://ieee
 > WASD: A Wilder Active Speaker Detection Dataset   
 > Tiago Roxo, Joana Cabral Costa, Pedro R. M. Inácio, and Hugo Proença
 
-*To view further details about WASD go to [dataset website](https://tiago-roxo.github.io/WASD/)*
+*For further details about WASD, please visit our [dataset website](https://tiago-roxo.github.io/WASD/)*
 
 ***
 
