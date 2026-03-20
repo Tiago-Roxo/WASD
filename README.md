@@ -1,6 +1,6 @@
 # Wilder Active Speaker Detection (WASD) Dataset
 
-This repository contains the code and model weights for our [paper](https://ieeexplore.ieee.org/document/10554644/) (TBIOM 2025):
+This repository contains the code and data for our [paper](https://ieeexplore.ieee.org/document/10554644/) (TBIOM 2025):
 
 > WASD: A Wilder Active Speaker Detection Dataset   
 > Tiago Roxo, Joana Cabral Costa, Pedro R. M. Inácio, and Hugo Proença
