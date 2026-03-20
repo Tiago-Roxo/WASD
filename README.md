@@ -152,7 +152,7 @@ To train in WASD we refer to the implementation of one of our models: [BIAS](htt
 ## 📖 Cite
 
 ```bibtex
-@article{roxo2024wasd,
+@article{roxo2025wasd,
   author={Roxo, Tiago and Costa, Joana Cabral and Inácio, Pedro R. M. and Proença, Hugo},
   journal={IEEE Transactions on Biometrics, Behavior, and Identity Science}, 
   title={WASD: A Wilder Active Speaker Detection Dataset}, 
