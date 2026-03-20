@@ -51,7 +51,7 @@ This repository contains the code and model weights for our [paper](https://ieee
 
 
 
-## State-of-the-art Results
+## 📊 State-of-the-art Results
 
 ### Models Trained on AVA-ActiveSpeaker
 Comparison of AVA-ActiveSpeaker trained state-of-the-art models on AVA-ActiveSpeaker and categories of WASD, using the mAP metric. We train and evaluate each model following the authors’ implementation. OC refers to Optimal Conditions, SI to Speech Impairment, FO to Face Occulsion, HVN to Human Voice Noise, and SS to Surveillance Settings. AVA refers to AVA-ActiveSpeaker.
