@@ -4,7 +4,7 @@ layout: default
 
 # Wilder Active Speaker Detection (WASD) Dataset
 
-This repository contains the code and model weights for our [paper](https://ieeexplore.ieee.org/document/10554644/) (TBIOM 2025):
+This repository contains the code and data for our [paper](https://ieeexplore.ieee.org/document/10554644/) (TBIOM 2025):
 
 > WASD: A Wilder Active Speaker Detection Dataset   
 > Tiago Roxo, Joana Cabral Costa, Pedro R. M. Inácio, and Hugo Proença
@@ -212,7 +212,7 @@ From left to right, all images contain the original scenario, head bounding box 
 ## 📖 Cite
 
 ```bibtex
-@article{roxo2024wasd,
+@article{roxo2025wasd,
   author={Roxo, Tiago and Costa, Joana Cabral and Inácio, Pedro R. M. and Proença, Hugo},
   journal={IEEE Transactions on Biometrics, Behavior, and Identity Science}, 
   title={WASD: A Wilder Active Speaker Detection Dataset}, 
