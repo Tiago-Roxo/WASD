@@ -177,7 +177,7 @@ where `$GT` is the groundtruth CSV (*val_orig.csv* of WASD) and `$PRED` is the p
 
 To train in WASD we refer to the implementation of one of our models: [BIAS](https://github.com/Tiago-Roxo/BIAS/tree/main/BIAS) or [ASDnB](https://github.com/Tiago-Roxo/ASDnB).
 
-## Annotations
+## 📋 Annotations
 
 #### Format
 
