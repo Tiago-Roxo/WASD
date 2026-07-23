@@ -89,14 +89,14 @@ The dataset can be obtained in two ways:
 
 | Format | Size | Description | Link |
 |--------|------|------|------|
-| clips_audios.zip | 7 GB | Preprocessed audio files | _Coming soon_ |
-| clips_videos_body.zip | 246 GB | Preprocessed body frames | _Coming soon_ |
-| clips_videos.zip | 46 GB | Preprocessed face frames | _Coming soon_ |
-| csv.zip | 0.3 GB | CSV files | _Coming soon_ |
+| clips_audios.zip | 7 GB | Preprocessed audio files | [Download](http://www.it.ubi.pt/WASD/clips_audios.zip) |
+| clips_videos_body.zip | 246 GB | Preprocessed body frames | [Download](http://www.it.ubi.pt/WASD/clips_videos_body.zip) |
+| clips_videos.zip | 46 GB | Preprocessed face frames | [Download](http://www.it.ubi.pt/WASD/clips_videos.zip) |
+| csv.zip | 0.3 GB | CSV files | [Download](http://www.it.ubi.pt/WASD/csv.zip) |
 
 ### Option B - Preprocessing from Source
 
-⚠️ The preprocessing downloads the WASD source videos from a Google Drive link, in `prepare_setup.py` in function `download_videos`. **If you have trouble** downloading from this link, we provide a direct link in _Coming soon_
+⚠️ The preprocessing downloads the WASD source videos from a Google Drive link, in `prepare_setup.py` in function `download_videos`. **If you have trouble** downloading from this link, we provide a direct link in [Here](http://www.it.ubi.pt/WASD/WASD_videos.zip)
 
 1. Download the content of this GitHub repository;
 2. Execute `python3 prepare_setup.py` to create the `WASD` directory and necessary subfolders;
