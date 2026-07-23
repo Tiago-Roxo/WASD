@@ -15,7 +15,7 @@ This repository contains the code and data for our [paper](https://ieeexplore.ie
 
 | | Update | Description |
 |---|---|---|
-| 📥 | **New download method** | We will update this repository to have direct [links to preprocessed WASD](#option-a---direct-download) |
+| 📥 | **New download method** | We updated this repository to have direct [links to preprocessed WASD](#option-a---direct-download) |
 | 💻 | **Code update** | We fix minor errors in preparing and downloading WASD content |
 
 ***
