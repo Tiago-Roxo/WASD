@@ -162,4 +162,24 @@ To train in WASD we refer to the implementation of one of our models: [BIAS](htt
   pages={61-70},
   doi={10.1109/TBIOM.2024.3412821}
 }
+
+@article{roxo2024bias,
+  title={BIAS: A Body-Based Interpretable Active Speaker Approach}, 
+  author={Roxo, Tiago and Costa, Joana C. and Inácio, Pedro R. M. and Proença, Hugo},
+  journal={IEEE Transactions on Biometrics, Behavior, and Identity Science}, 
+  year={2024},
+  publisher={IEEE},
+  doi={10.1109/TBIOM.2024.3520030}
+}
+
+@INPROCEEDINGS{roxo2025asdnb,
+  author={Roxo, Tiago and Costa, Joana C. and Inácio, Pedro R. M. and Proença, Hugo},
+  booktitle={2025 IEEE International Joint Conference on Biometrics (IJCB)}, 
+  title={ASDnB: Merging Face with Body Cues For Robust Active Speaker Detection}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-10},
+  doi={10.1109/IJCB65343.2025.11410746}
+}
 ```
